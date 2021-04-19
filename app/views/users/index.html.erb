@@ -1,0 +1,46 @@
+<div class="content-alignment font-weight-bold">USERS</div>
+  <div class="container">
+    <table class="table table-sm", style="text-align:center">
+    	<head>
+    		<tr class="thead-light">
+    			<th>First Name</th>
+    			<th>Last Name</th>
+    			<th>Phone Number</th>
+    			<th>Address</th>
+    			<th>City</th>
+    			<th>State</th>
+    			<th>Pin Code</th>
+    		</tr>
+    	</head>
+      <body>
+        <% @users.each do |user| %>
+          <tr class="content-alignment-inside">
+            <td><%= user.first_name %></td>
+            <td><%= user.last_name %></td>
+            <td><%= user.phone_number %></td>
+            <td><%= user.address %></td>
+            <td><%= user.city %></td>
+            <td><%= user.state %></td>
+            <td><%= user.pincode %></td>
+            <td><%= link_to 'Show', user_path(user), :class =>"btn btn-primary"%></td>
+            <td><%= link_to 'Edit', edit_user_path(user), :class =>"btn btn-info"%></td>
+            <td><%= link_to 'Destroy', user_path(user), :class =>"btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+         <% end %>
+      </body>
+    </table>
+  </div><br>
+<%= link_to 'New User', new_user_path, :class=> "btn btn-primary btn-alignment"%>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
