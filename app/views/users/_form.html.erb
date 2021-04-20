@@ -1,48 +1,47 @@
 <div class="container center_div">
-<%= form_with scope: :user, url: users_path, local: true do |form| %>
-  <p>
-    <strong>First Name</strong><br>
-    <%= form.text_field :first_name %>
-  </p>
+  <%= form_with scope: :user, url: users_path, local: true do |form| %>
+    <p>
+      <strong>First Name</strong><br>
+      <%= form.text_field :first_name %>
+    </p>
 
-  <p>
-    <strong>Last Name</strong><br>
-    <%= form.text_field :last_name %>
-  </p>
+    <p>
+      <strong>Last Name</strong><br>
+      <%= form.text_field :last_name %>
+    </p>
 
-  <p>
-    <strong>Phone Number</strong><br>
-    <%= form.text_field :phone_number %>
-  </p>
+    <p>
+      <strong>Phone Number</strong><br>
+      <%= form.text_field :phone_number %>
+    </p>
 
-  <p>
-    <strong>Address</strong><br>
-    <%= form.text_area :address %>
-  </p>
+    <p>
+      <strong>Address</strong><br>
+      <%= form.text_area :address %>
+    </p>
 
-  <p>
-    <strong>City</strong><br>
-    <%= form.text_field :city %>
-  </p>
+    <p>
+      <strong>City</strong><br>
+      <%= form.text_field :city %>
+    </p>
 
-  <p>
-    <strong>State</strong><br>
-    <%= form.text_field :state %>
-  </p>
+    <p>
+      <strong>State</strong><br>
+      <%= form.text_field :state %>
+    </p>
 
-  <p>
-    <strong>Pin Code</strong><br>
-    <%= form.text_field :pincode %>
-  </p>
+    <p>
+      <strong>Pin Code</strong><br>
+      <%= form.text_field :pincode %>
+    </p>
 
-  <p>
-    <strong>Picture</strong>
-    <%= form.file_field :picture %>
-  </p>
+    <p>
+      <strong>Picture</strong>
+      <%= form.file_field :picture %>
+    </p>
 
-  <p>
-    <%= form.submit :class=> "btn btn-info" %>
-  </p>
-<% end %>
+    <p>
+      <%= form.submit :class=> "btn btn-info" %>
+    </p>
+  <% end %>
 </div>
-
